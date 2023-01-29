@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        *{
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+
+        section
+        {
+            display:flex;
+            gap: 5%;
+        }
+        section img
+        {
+            width: 30%;
+            transition-duration: 0.2s;
+        }
+
+        section img:hover
+        {
+            /*https://www.cssmatic.com/box-shadow*/
+             box-shadow: 10px 10px 27px 0px rgba(176,169,176,1);
+        }
+
+    </style>
+
+    <section>
+            <img src="https://lipsum.app/id/3/600x450" alt="">
+            <img src="https://lipsum.app/id/23/600x450" alt="">
+            <img src="https://lipsum.app/id/33/600x450" alt="">
+    </section>
+
+</head>
+<body>
+    
+</body>
+</html>

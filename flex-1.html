@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+
+
+<!--
+    flex direction
+    gap
+    justify content
+    gap
+-->
+
+
+
+    <style>
+        
+
+        *{
+            box-sizing: border-box;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+        section{
+            background-color: antiquewhite;
+            padding:16px;
+            border-radius: 16px;
+
+            display:flex;
+             /*column yukarıdan asagı sıralar */
+             flex-direction: row; 
+             gap:16px;
+             justify-content: space-between;
+             height: 300px;
+             align-items:center;
+        }
+
+        div:nth-of-type(2){
+            background-color: rgb(113, 209, 102);
+            /*width: 100px; */
+        }
+        .x{
+            border-radius: 16px;
+        }
+        div:first-of-type
+        {
+            background-color: rgb(188, 151, 224);
+            border-radius: 16px;
+            /*width: 100px; */
+        }
+
+        div:last-of-type
+        {
+            background-color: cadetblue;
+            border-radius: 16px;
+            /*width: 100px;*/
+        } 
+
+        div /*tum divleri secer*/
+        {
+            /*height:50px;*/
+            margin:16px;
+            padding:8px;
+            
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <section>
+            <div> KUTU 1 </div>
+            <div class="x"> KUTU 2 </div>
+            <div> KUTU 3 </div>
+
+    </section>
+
+
+    
+</body>
+</html>
