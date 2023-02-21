@@ -1,0 +1,73 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+
+section#popup{
+
+max-width: 800px;
+margin: auto;
+background-image: url(arkaplan.jpg);
+background-size: cover;
+padding: 32px;
+
+}
+
+
+div#popup-kategoriler{
+
+    display: flex;
+    gap:32px;
+}
+
+img{
+    max-width: 100%;
+    /*boylece gorseller icinde bulunduklari alandan tasmaz*/
+}
+
+section#popup p:nth-of-type(1)
+/*pop up icindeki ilk paragrafi secer*/
+{
+    font-size: 22px;
+}
+
+section#popup p{
+
+    text-align: center;
+    line-height: 1.8;
+}
+
+section#popup p:nth-of-type(2)
+{
+    margin-bottom: 32px;
+}
+
+section#popup h2
+{
+    color:white;
+    background-color: black;
+    padding:16px;
+    text-align: center;
+
+}
+
+section#popup img
+{
+    display: block;
+}
+
+section#popup a:hover h2
+{
+    background-color: rgb(229, 78, 24);
+    transition-duration: 0.3s;
+}
+
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute 3</title>
+</head>
+
+<style>
+    div.kutu1{
+        width: 400px;
+        height:250px;
+
+        position: relative;
+
+    }
+    div.kutu1 h2{
+
+        color:white;
+        background-color: rgb(6, 6, 112);
+        padding: 8px;
+        text-align: center;
+        width: 200px;
+
+        /*ortalamanın ilk adımı*/
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        /*ortalamanın son adımı*/
+        transform:translate(-50%,-50%);
+        margin:0;
+        
+
+        
+        
+    }
+
+
+
+</style>
+
+
+
+<body>
+
+    <div class="kutu1">
+        <h2>Gemi Turları</h2>
+        <img src="https://lipsum.app/id/35/400x250" alt="">
+
+    </div>
+    
+</body>
+</html>
