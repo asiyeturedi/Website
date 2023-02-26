@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile 2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0; padding: 0; font-family: sans-serif; line-height: 1.4;
+            background-color: white;
+        }
+        img{
+            max-width: 100%;
+        }
+
+        body {
+            margin: 16px;
+        }
+
+        section#urun-liste {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        div.urunler {
+            display: flex;
+        }
+
+        div.urunler > div {
+            flex: 1;
+        }
+
+        @media all and (max-width: 500px) {
+/*tum ortamlarda en fazla 500px genislige
+kadar ekranlarda calıssın*/
+            div.urunler {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="urun-liste">
+        <h2>Products</h2>
+        <div class="urunler">
+            <div>
+                <img src="https://lipsum.app/id/15/390x250" alt="">
+                <h3>Product 1</h3>
+            </div>
+
+            <div>
+                <img src="https://lipsum.app/id/25/390x250" alt="">
+                <h3>Product 2</h3>
+            </div>
+
+            <div>
+                <img src="https://lipsum.app/id/35/390x250" alt="">
+                <h3>Product 3</h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

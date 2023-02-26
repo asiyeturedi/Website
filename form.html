@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0; padding: 0;
+        line-height: 1.4;
+        font-family: sans-serif;
+
+
+    }
+
+    html,body{ height: 100%;}
+
+
+
+    body{
+
+        background:linear-gradient(153deg, #9e74ba7f 22%, #6f4689ca 100%),url(background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    section#form1-frame
+    {
+        background-color: rgba(255, 255, 255, 0.85);
+        max-width: 1000px;
+        min-width: 1000px;
+        min-height: 500px;
+        border-radius:10px ;
+
+        display: flex;
+        align-items: center;
+        gap:16px;
+
+    }
+    section#form1-frame h2 {
+            margin-top: 16px;
+            display: flex;
+            justify-content:center;
+        }
+
+    section#form1-frame img{
+
+        max-width: 50%;
+        min-height: 100%;
+        padding: 16px;
+        margin:16px;
+        border-radius:30px ;
+    }
+
+    
+    section#form1-frame form{
+
+        padding: 8px;
+        margin: 8px;
+        gap:8px;
+        display:flex;
+        flex-direction: column;
+        border: none;
+
+        
+
+
+    }
+    section#form1-frame button{
+
+        background-color: #8888FF;
+        color: white;
+        border: none;
+        min-height:48px ;
+    
+    }
+    section#form1-frame form input{
+
+        border: none;
+        background-color: #bdb6b669;
+        min-height: 48px;
+
+    }
+    section#form1-frame form textarea
+    {
+        border: none;
+        background-color: #bdb6b669;
+        min-height: 48px;
+        margin-bottom: 16px;
+
+    }
+
+    section#form1-frame form *
+    {
+        padding: 8px 16px;
+        border-radius: 25px;
+
+    }
+
+    section#form1-frame form > * :focus{
+
+        outline:1px solid grey;
+
+
+    }       
+
+
+
+
+
+</style>
+
+
+<body>
+
+    <section id="form1-frame">
+        
+        <img src="contact.png" alt="">
+        <div> 
+            <h2>Get in touch</h2>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea name="" id="" cols="30" rows="10"  placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+        
+    </section>
+    
+
+
+
+
+
+</body>
+</html>
